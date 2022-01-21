@@ -1,0 +1,221 @@
+*{
+    font-family:'Roboto', sans-serif;
+}
+header{
+    position:relative;
+}
+nav {
+    position:fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    background-color:#212121;
+        }
+.menu{
+
+
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    list-style: none;
+    
+    }
+
+    a{
+        text-decoration: none;
+        
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+
+.menu .menu_link{
+
+font-weight: 300;
+font-size: 15px;
+
+color: #FFFFFF;
+
+}
+.menu .menu_item{
+border-right: 2px dotted black;
+padding-right: 28px;
+    }
+
+.subheader{
+position:absolute;
+width: 100%;
+margin-top: 50px;
+height: 87px;
+background: rgba(0, 0, 0,.6);
+}
+.subheader .subheader_logo{
+    display: block;
+    max-width: 100%;
+margin-top: 16px;
+
+}
+.subheader .subheader_official{
+    margin-top: 6px;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 13px;
+    color:white;
+}
+.subheader .subheader_call{
+font-weight: 300;
+font-size: 12px;
+margin-top: 19px;
+}
+
+.subheader .subheader_number{
+
+    font-size: 22px;
+    
+    }
+
+    .subheader .subheader_phone{
+
+        font-size: 22px;
+        color:white;
+        line-height: 12px;
+        text-decoration: none;
+        }
+
+.subheader .subheader_button{
+    margin-top: 19px;
+ 
+    width: 172px;
+    height: 46px;
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+
+}
+.promo{
+    min-height: 800px;
+    background: url(/src/img/uber_bg.png) center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+.promo .promo_header{
+    font-family: Roboto;
+    color: white;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+     margin: 0;
+     text-align: center;
+    }
+.promo .promo_subheader{
+    font-family: Roboto;
+    color: white;
+    font-weight: 400;
+    font-size: 36px; 
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+    margin-top: 22px;
+}
+.promo .promo_descr
+{
+    font-family: Roboto;
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+.promo .promo_btn{
+    display: block;
+    margin: 108px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    
+
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    color: #FFFFFF;
+    
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21); 
+}
+.grunden .container{
+min-height: 849px;
+margin: 23px auto  auto auto;
+background-color:white;
+
+
+}
+.grunden .grund_header{
+
+
+    width: 115px;
+    height: 27px;
+    background-color:black;
+    align-content: center;
+    font-family: Roboto;
+    font-size: 11px;
+     color:white;
+
+    margin: 0;
+ padding-top: 7px;
+    text-transform: uppercase;
+
+    }
+.grunden .grund_subheader{
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+margin: 0;
+margin-top: 30px;
+margin-bottom: 16px;
+
+text-align: center;
+text-transform: uppercase;
+background-color:white;
+color: #222222;
+}
+
+.grunden .grund_img{
+display: inline;
+width: 116px;
+height: 116px;
+padding: 20px;
+float: left;
+
+margin-right: 25px;
+border-radius:100%;
+
+background:  #1EACC7;
+
+}
+.grunden .text_header{
+    color: #1EACC7;
+    height: 150px;
+    display: inline;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 21px;
+}
+.grunden .text{
+   height: 150px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 21px;
+}
