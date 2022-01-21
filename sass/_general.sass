@@ -1,0 +1,450 @@
+
+header
+  position: relative
+
+
+    
+nav
+  position: fixed
+  height: 50px
+  width: 100%
+  z-index: 1
+  background-color: #212121
+
+
+a
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 13px 70px
+    margin: 0
+    list-style: none
+    &_link
+        font-weight: 300
+        font-size: 15px
+        color: #FFFFFF
+        &:hover
+            text-decoration: none            
+    &_item
+        border-right: 2px dotted black
+        padding-right: 28px
+        &:last-child
+            border: none
+
+.subheader
+    position: absolute
+    width: 100%
+    margin-top: 50px
+    height: 87px
+    background: rgba(0, 0, 0, 0.6)
+
+    &_logo
+        display: block
+        max-width: 100%
+        margin-top: 16px
+
+    &_official
+        margin-top: 6px
+        opacity: 0.5
+        font-weight: 400
+        font-size: 13px
+        color: white
+
+    &_call
+        position: relative
+        text-align: right
+        color: white
+        font-weight: 300
+        font-size: 12px
+        margin-top: 19px
+
+    &_number
+       
+        font-size: 22px
+    
+
+    &_phone
+        display: block
+        font-size: 22px
+        color: white
+        margin-top: 8px
+        text-align: right
+        line-height: 12px
+        text-decoration: none
+
+    &_btn
+        margin-top: 19px
+        width: 172px
+        height: 46px
+        background: linear-gradient(0deg, $blueColor 0%, #4CE2FF 100%)
+        box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+        border-radius: 4px
+        border: none
+        font-size: 14px
+        align-items: center
+        text-align: center
+        text-transform: uppercase
+        color: white
+        +btn_hover
+
+.hamburger
+    display: none    
+.promo
+  min-height: 800px
+  background: url(../img/uber_bg.png) center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  &_header
+    font-family: Roboto
+    color: white
+    font-weight: 700
+    font-size: 60px
+    line-height: 60px
+    margin: 0
+    text-align: center
+
+  &_subheader
+    font-family: Roboto
+    color: white
+    font-weight: 400
+    font-size: 36px
+    line-height: 36px
+    text-align: center
+    margin: 0
+    margin-top: 22px
+
+  &_descr
+    font-family: Roboto
+    margin-top: 23px
+    font-weight: 400
+    font-size: 18px
+    color: #FFFFFF
+    line-height: 24px
+
+  &_btn
+    display: block
+    margin: 108px auto 0 auto
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, $blueColor 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+.grunden
+    .container
+        display: flex
+        min-height: 849px
+        margin: 23px auto  auto auto
+        background-color: white
+    &_razm
+        display: flex
+        flex-direction: flex-start
+        align-items: left
+
+        height: 250px
+    &_img
+      
+        width: 116px
+        height: 116px
+        padding: 20px
+        float: left
+        margin-right: 25px
+        border-radius: 100%
+        background: $blueColor
+
+    &_text_header
+       
+        color: #1EACC7
+
+  
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 17px
+        line-height: 21px
+
+    .text
+        
+        height: 150px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 15px
+        line-height: 21px
+
+
+.label
+    width: 112px
+    height: 24px
+    background-color: black
+    align-content: center
+    font-family: Roboto
+    font-size: 11px
+    color: white
+    margin: 0 auto
+    padding: 5px 12px
+    font-weight: 300
+    text-transform: uppercase
+    
+.title
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 38px
+    margin: 0
+    margin-top: 30px
+
+    text-align: center
+    text-transform: uppercase
+    background-color: transparent
+    color: #222222
+.subtitle
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 21px
+
+    text-align: center
+
+    color: #222222  
+.mobile
+    min-height: 864px
+    padding: 48px 0 79px 0
+    background: url('../img/bgmobile.jpg')  center (center / cover) no-repeat
+    .row
+        margin-top: 32px
+    &_item
+        width: 320px
+        height: 280px
+        margin-bottom: 19px
+        padding-top: 92px
+        position: relative
+        &_subtitle
+
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 31px
+            text-align: center
+            text-transform: uppercase
+
+            color: #FFFFFF
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 26px
+            height: 26px
+            margin: 0 auto
+            background: black
+            border-radius: 100%
+            padding: 6px
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            cursor: pointer
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background: $blueColor
+            &::after
+                content: ''
+                display: block
+                width: 2px
+                height: 14px
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                background: $blueColor
+            &:hover
+                &::before, &::after
+                    background: $redColor
+                    transition: 0.6s
+                    
+            
+        &_1
+            background: url('../img/карточка1.png') center (center / cover) no-repeat 
+        &_2
+            background: url('../img/карточка2.png') 
+        &_3
+            background: url('../img/карточка3.png') 
+        &_4
+            background: url('../img/карточка4.png') 
+        &_5
+            background: url('../img/карточка5.png') 
+        &_6
+            background: url('../img/uber_bg.png.png') 
+.auto
+    min-height: 864px
+    padding: 57px 0 137.5px 0
+    background: url('../img/autoBG.png')  center (center / cover) no-repeat
+    .label
+        background: white
+        color: black
+
+    .title
+        color: white
+    .subtitle
+        color: white
+    &_img
+        margin: 0 auto
+        margin-top: 76px
+        width: 759px
+        height: 480px
+    &_img_text
+        font-family: Roboto
+        font-size: 17px
+        text-align: center
+        font-style: normal
+        font-weight: 300
+        line-height: 24px
+        letter-spacing: 0px
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0
+    &_title
+        color: #1CA8C3
+        font-family: Roboto
+        font-size: 22px
+        font-style: normal
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0px
+        text-align: left
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-family: Roboto
+            font-size: 17px
+            font-style: normal
+            font-weight: 300
+            line-height: 24px
+            letter-spacing: 0px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+
+                height: 20px
+                width: 21px
+                background: url('../icons/check_blue 5.png') center (center / cover) no-repeat
+    .warning
+        .require_title
+            color: $redColor
+        .require_list
+            li
+                &::before
+                    background: url('../icons/check_red 8.png') center (center / cover) no-repeat
+
+.map
+    min-height: 864px
+    padding: 49px 0 21.5px 0
+    background: url('../img/Group 1.png') center (center / cover) no-repeat
+    .label
+        background: white
+        color: black
+    .title
+        color: white
+    .subtitle
+        color: white
+    &_cities
+        display: flex
+        margin: 0 auto
+        height: 68px;
+        width: 200px;
+
+        margin-top: 672.5px
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 68px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1FBAD6;
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+
+	&_mobile
+.xs-visible
+    display: none
